@@ -1,0 +1,20 @@
+@baseUrl = http://127.0.0.1:8001
+
+### Health
+GET {{baseUrl}}/health
+
+### Register
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{"email":"new.customer@example.com","password":"Password1","full_name":"New Customer","phone":"9000000010"}
+
+### Login
+POST {{baseUrl}}/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=customer@food.test&password=Customer123!
+
+### Search restaurants
+GET {{baseUrl}}/restaurants?city=Chennai&page=1&size=20&sort=name
+
