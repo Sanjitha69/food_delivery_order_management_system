@@ -1,1 +1,1 @@
-# food_delivery_order_managemnet_system
+# food_delivery_order_management_system
